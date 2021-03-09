@@ -19,3 +19,32 @@ input,
 button {
   font-size: 1em;
 }
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: [content] auto;
+  grid-template-rows: [header] 80px [content] auto [navbar] 80px;
+}
+
+.header-layout {
+  grid-column: content;
+  grid-row: header;
+  place-self: center;
+}
+
+.content-layout {
+  grid-column: content;
+  grid-row: content;
+  width: 100%;
+  height: 510px;
+}
+
+.navbar-layout {
+  grid-column: content;
+  grid-row: navbar;
+}
+
+.footer {
+  display: flex;
+  fle
+}
