@@ -58,7 +58,7 @@ footer {
   height: 100%;
 }
 
-.main-layout {
+.main-home-layout {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -74,7 +74,7 @@ footer {
   padding: 15px;
   border: solid 2px var(--quiz-window-border);
   border-radius: 1rem;
-  background-color: var(--quiz-window-background);
+  background-color: var(--content-background);
 }
 
 .quiz-bookmark {
@@ -87,28 +87,28 @@ footer {
   scale: 1.3;
 }
 
-.button-answer {
+.button {
   display: inline-block;
   place-self: center;
   max-width: 170px;
   padding: 12px 25px;
-  font-size: 14px;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  background-color: var(--answer-button-background);
   border: none;
   border-radius: 15px;
+  outline: none;
   box-shadow: 0 9px var(--answer-button-shadow);
+  background-color: var(--answer-button-background);
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
   cursor: pointer;
 }
 
-.button-answer:hover {
+.button:hover {
   color: white;
   background-color: var(--answer-button-hover);
 }
 
-.button-answer:acitve {
+.button:acitve {
   background-color: var(--answer-button-button-active);
   box-shadow: 0 5px var(--answer-button-active-shadow);
   transform: translateY(4px);
@@ -130,6 +130,54 @@ footer {
 
 .tag:hover {
   scale: 1.1;
+}
+
+.main-profile-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.picture-section {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.profile-picture {
+  width: 20vw;
+  height: auto;
+  padding: 2px;
+  border: 5px solid transparent;
+  border-radius: 72% 28% 31% 69% / 30% 40% 60% 70%;
+  background-color: var(--content-background);
+  object-fit: cover;
+}
+
+.profile-name {
+  place-self: center;
+  padding: 30px;
+  border-radius: 1rem;
+  background-color: var(--content-background);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.profile-text-section {
+  width: 50vw;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--content-background);
+  place-self: center;
+}
+
+.skill-tag-layout {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skill-tag {
+  background-color: var(--tag-background);
 }
 
 .navbar-layout {
