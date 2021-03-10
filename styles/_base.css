@@ -31,8 +31,9 @@ button {
 }
 
 header {
-  background: brown;
   grid-row: 1 / 2;
+  border: solid 2px black;
+  background: brown;
 }
 
 main {
@@ -46,13 +47,17 @@ main {
 
 footer {
   grid-row: 3 / 4;
+  border: solid 2px black;
+  background-color: burlywood;
 }
 
 .main-layout {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 300px;
+  position: relative;
 }
 
 .header-title-container {
@@ -66,11 +71,18 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: ;
 }
 
 .quiz-window {
+  padding: 1rem;
   border: solid 1px black;
   background-color: white;
   justify-content: center;
+  position: relative;
+}
+
+.quiz-bookmark {
+  position: absolute;
+  right: 5px;
+  top: -14px;
 }
