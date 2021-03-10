@@ -20,7 +20,7 @@ button {
   font-size: 1em;
 }
 
-.grid-layout {
+.overall-layout {
   display: grid;
   height: 100vh;
   min-width: 320px;
@@ -51,13 +51,6 @@ footer {
   background-color: var(--navbar-background);
 }
 
-.main-layout {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
 .header-title-container {
   display: flex;
   justify-content: center;
@@ -65,14 +58,11 @@ footer {
   height: 100%;
 }
 
-.navbar-layout {
+.main-layout {
+  margin-top: 20px;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.nav-icon:hover {
-  scale: 1.1;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .quiz-window {
@@ -139,5 +129,14 @@ footer {
 }
 
 .tag:hover {
+  scale: 1.1;
+}
+
+.navbar-layout {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-icon:hover {
   scale: 1.1;
 }
