@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 112.5%;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.3;
+}
+
+input,
+button {
+  font-size: 1em;
+}
+
+.overall-layout {
+  display: grid;
+  grid-template-rows: 60px auto 80px;
+  height: 100vh;
+  min-width: 320px;
+  max-width: 60vw;
+  margin: 0 auto;
+  /* because of auto it will only as big as the conten auto=topDown */
+}
+
+header {
+  grid-row: 1 / 2;
+  border: solid 2px var(--header-border);
+  background: var(--header-background);
+}
+
+main {
+  grid-row: 2 / 3;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-background);
+  overflow-y: scroll;
+}
+
+footer {
+  grid-row: 3 / 4;
+  border: solid 2px var(--navbar-border);
+  background-color: var(--navbar-background);
+}
+
+.header-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.quiz-window {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+  width: 50vw;
+  padding: 15px;
+  border: solid 2px var(--quiz-window-border);
+  border-radius: 1rem;
+  background-color: var(--quiz-window-background);
+}
+
+.quiz-bookmark {
+  position: absolute;
+  right: 25px;
+  top: -14px;
+}
+
+.quiz-bookmark:hover {
+  scale: 1.3;
+}
+
+.button-answer {
+  display: inline-block;
+  place-self: center;
+  max-width: 170px;
+  padding: 12px 25px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background-color: var(--answer-button-background);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px var(--answer-button-shadow);
+  cursor: pointer;
+}
+
+.button-answer:hover {
+  color: white;
+  background-color: var(--answer-button-hover);
+}
+
+.button-answer:acitve {
+  background-color: var(--answer-button-button-active);
+  box-shadow: 0 5px var(--answer-button-active-shadow);
+  transform: translateY(4px);
+}
+
+.tag-layout {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.tag {
+  padding: 6px;
+  border: solid 2px var(--tag-border);
+  border-radius: 20%;
+  background-color: var(--tag-background);
+  font-size: 14px;
+}
+
+.tag:hover {
+  scale: 1.1;
+}
+
+.navbar-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-icon:hover {
+  scale: 1.1;
+}
