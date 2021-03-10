@@ -55,9 +55,7 @@ footer {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 300px;
-  position: relative;
+  gap: 20px;
 }
 
 .header-title-container {
@@ -74,15 +72,38 @@ footer {
 }
 
 .quiz-window {
-  padding: 1rem;
+  width: 50vw;
+  display: grid;
+  padding: 15px;
   border: solid 1px black;
   background-color: white;
   justify-content: center;
   position: relative;
+  gap: 10px;
 }
 
 .quiz-bookmark {
   position: absolute;
   right: 5px;
   top: -14px;
+}
+
+.button-answer {
+  font-size: 14px;
+  max-width: 150px;
+  place-self: center;
+}
+
+.tag-layout {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tag {
+  font-size: 14px;
+  padding: 6px;
+  border: solid 2px black;
+  border-radius: 1rem;
+  background-color: burlywood;
 }
