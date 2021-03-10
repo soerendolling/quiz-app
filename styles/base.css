@@ -95,8 +95,8 @@ footer {
   border: none;
   border-radius: 15px;
   outline: none;
-  box-shadow: 0 9px var(--answer-button-shadow);
-  background-color: var(--answer-button-background);
+  box-shadow: 0 9px var(--button-shadow);
+  background-color: var(--button-background);
   text-align: center;
   text-decoration: none;
   font-size: 14px;
@@ -105,12 +105,12 @@ footer {
 
 .button:hover {
   color: white;
-  background-color: var(--answer-button-hover);
+  background-color: var(--button-hover);
 }
 
 .button:acitve {
-  background-color: var(--answer-button-button-active);
-  box-shadow: 0 5px var(--answer-button-active-shadow);
+  background-color: var(--button-active);
+  box-shadow: 0 5px var(--button-active-shadow);
   transform: translateY(4px);
 }
 
@@ -126,6 +126,8 @@ footer {
   border-radius: 20%;
   background-color: var(--tag-background);
   font-size: 14px;
+  color: var(--tag-font-color);
+  font-weight: bold;
 }
 
 .tag:hover {
@@ -135,7 +137,7 @@ footer {
 .main-profile-layout {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
 }
 
 .picture-section {
@@ -176,10 +178,6 @@ footer {
   justify-content: space-evenly;
 }
 
-.skill-tag {
-  background-color: var(--tag-background);
-}
-
 .navbar-layout {
   display: flex;
   flex-direction: row;
@@ -189,4 +187,5 @@ footer {
 
 .nav-icon:hover {
   scale: 1.1;
+  box-shadow: white;
 }
