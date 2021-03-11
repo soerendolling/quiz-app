@@ -4,13 +4,14 @@
   --main-background: lightskyblue;
   --navbar-background: burlywood;
   --navbar-border: black;
-  --quiz-window-background: white;
+  --content-background: white;
   --quiz-window-border: black;
-  --answer-button-background: burlywood;
-  --answer-button-shadow: rgb(202, 193, 193);
-  --answer-button-hover: rgb(167, 126, 73);
-  --answer-button-active: rgb(167, 126, 73);
-  --answer-button-active-shadow: #666;
+  --button-background: burlywood;
+  --button-shadow: rgb(202, 193, 193);
+  --button-hover: rgb(167, 126, 73);
+  --button-active: rgb(167, 126, 73);
+  --button-active-shadow: #666;
   --tag-border: black;
   --tag-background: burlywood;
+  --tag-font-color: black;
 }
