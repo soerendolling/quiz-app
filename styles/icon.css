@@ -1,9 +1,9 @@
-.nav-icon {
+.navbar__icon {
   width: 3em;
   height: 3em;
 }
 
-.quiz-bookmark {
+.quiz-card__bookmark {
   width: 2em;
   height: 2em;
 }

@@ -7,105 +7,79 @@
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
-    <div class="overall-layout">
-      <header>
-        <div class="header-title-container">
+    <div class="body-grid">
+      <header class="body-grid__header">
+        <div class="header__title">
           <h1>Bookmarks</h1>
         </div>
       </header>
-      <main>
-        <div class="main-home-layout">
-          <article class="quiz-window">
-            <img
-              src="./icons/bookmark.svg"
-              alt="bookmark-icon"
-              class="quiz-bookmark"
-            />
-            <section class="question">
+      <main class="body-grid__main">
+        <div class="main-grid__container">
+          <article class="quiz-card">
+            <a href="./">
+              <img
+                src="./icons/bookmark.svg"
+                alt="bookmark-icon"
+                class="quiz-card__bookmark"
+            /></a>
+            <section>
               <h3>This is a question</h3>
               <p>ipsum dolor, sit amet consectetur adipisicing elit. Debit</p>
             </section>
-            <button class="button">Show the Answer</button>
-            <span class="tag-layout">
-              <span class="tag">Tag1</span>
-              <span class="tag">Tag2</span>
-              <span class="tag">Tag3</span>
-              <span class="tag">Tag4</span>
+            <button class="quiz-card__button">Show the Answer</button>
+            <span class="quiz-card__taglayout">
+              <span class="quiz-card__tag">Tag1</span>
+              <span class="quiz-card__tag">Tag2</span>
+              <span class="quiz-card__tag">Tag3</span>
+              <span class="quiz-card__tag">Tag4</span>
             </span>
           </article>
-          <article class="quiz-window">
-            <img
-              src="./icons/bookmark.svg"
-              alt="bookmark-icon"
-              class="quiz-bookmark"
-            />
-            <section class="question">
+          <article class="quiz-card">
+            <a href="./">
+              <img
+                src="./icons/bookmark.svg"
+                alt="bookmark-icon"
+                class="quiz-card__bookmark"
+            /></a>
+            <section>
               <h3>This is a question</h3>
               <p>ipsum dolor, sit amet consectetur adipisicing elit. Debit</p>
             </section>
-            <button class="button">Show the Answer</button>
-            <span class="tag-layout">
-              <span class="tag">Tag1</span>
-              <span class="tag">Tag2</span>
-              <span class="tag">Tag3</span>
-              <span class="tag">Tag4</span>
-            </span>
-          </article>
-          <article class="quiz-window">
-            <img
-              src="./icons/bookmark.svg"
-              alt="bookmark-icon"
-              class="quiz-bookmark"
-            />
-            <section class="question">
-              <h3>This is a question</h3>
-              <p>ipsum dolor, sit amet consectetur adipisicing elit. Debit</p>
-            </section>
-            <button class="button">Show the Answer</button>
-            <span class="tag-layout">
-              <span class="tag">Tag1</span>
-              <span class="tag">Tag2</span>
-              <span class="tag">Tag3</span>
-              <span class="tag">Tag4</span>
-            </span>
-          </article>
-          <article class="quiz-window">
-            <img
-              src="./icons/bookmark.svg"
-              alt="bookmark-icon"
-              class="quiz-bookmark"
-            />
-            <section class="question">
-              <h3>This is a question</h3>
-              <p>ipsum dolor, sit amet consectetur adipisicing elit. Debit</p>
-            </section>
-            <button class="button">Show the Answer</button>
-            <span class="tag-layout">
-              <span class="tag">Tag1</span>
-              <span class="tag">Tag2</span>
-              <span class="tag">Tag3</span>
-              <span class="tag">Tag4</span>
+            <button class="quiz-card__button">Show the Answer</button>
+            <span class="quiz-card__taglayout">
+              <span class="quiz-card__tag">Tag1</span>
+              <span class="quiz-card__tag">Tag2</span>
+              <span class="quiz-card__tag">Tag3</span>
+              <span class="quiz-card__tag">Tag4</span>
             </span>
           </article>
         </div>
       </main>
-      <footer class="navbar-layout">
-        <a href="./index.html">
-          <img src="./icons/home.svg" alt="home icon" class="nav-icon"
-        /></a>
-        <a href="./bookmark.html">
-          <img
-            src="./icons/bookmark.svg"
-            alt="bookmark-icon"
-            class="nav-icon"
-          />
-        </a>
-        <a href="./create.html"
-          ><img src="./icons/create.svg" alt="create-icon" class="nav-icon"
-        /></a>
-        <a href="./profile.html"
-          ><img src="./icons/profile.svg" alt="profile-icon" class="nav-icon"
-        /></a>
+      <footer class="body-grid__footer">
+        <div class="navbar">
+          <a href="./index.html">
+            <img src="./icons/home.svg" alt="home icon" class="navbar__icon"
+          /></a>
+          <a href="./bookmark.html">
+            <img
+              src="./icons/bookmark.svg"
+              alt="bookmark-icon"
+              class="navbar__icon"
+            />
+          </a>
+          <a href="./create.html"
+            ><img
+              src="./icons/create.svg"
+              alt="create-icon"
+              class="navbar__icon"
+          /></a>
+          <a href="./profile.html"
+            ><img
+              src="./icons/profile.svg"
+              alt="profile-icon"
+              class="navbar__icon"
+          /></a>
+        </div>
       </footer>
     </div>
   </body>

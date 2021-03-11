@@ -20,7 +20,7 @@ button {
   font-size: 1em;
 }
 
-.overall-layout {
+.body-grid {
   display: grid;
   grid-template-rows: 60px auto 80px;
   height: 100vh;
@@ -30,13 +30,13 @@ button {
   /* because of auto it will only as big as the conten auto=topDown */
 }
 
-header {
+.body-grid__header {
   grid-row: 1 / 2;
   border: solid 2px var(--header-border);
   background: var(--header-background);
 }
 
-main {
+.body-grid__main {
   grid-row: 2 / 3;
   display: grid;
   align-items: center;
@@ -45,27 +45,27 @@ main {
   overflow-y: scroll;
 }
 
-footer {
+.body-grid__footer {
   grid-row: 3 / 4;
   border: solid 2px var(--navbar-border);
   background-color: var(--navbar-background);
 }
 
-.header-title-container {
+.header__title {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
-.main-home-layout {
+.main-grid__container {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-top: 20px;
 }
 
-.quiz-window {
+.quiz-card {
   position: relative;
   display: grid;
   justify-content: center;
@@ -77,23 +77,24 @@ footer {
   background-color: var(--content-background);
 }
 
-.quiz-bookmark {
+.quiz-card__bookmark {
   position: absolute;
   right: 25px;
   top: -14px;
 }
 
-.quiz-bookmark:hover {
+.quiz-card__bookmark:hover {
   scale: 1.3;
 }
 
-.quiz-bookmark:visited {
+.quiz-card__bookmark:visited {
   color: aqua;
   scale: 2.2;
   background-color: blueviolet;
 }
 
-.button {
+.quiz-card__button,
+.logout__button {
   display: inline-block;
   place-self: center;
   max-width: 170px;
@@ -109,24 +110,25 @@ footer {
   cursor: pointer;
 }
 
-.button:hover {
+.quiz-card__button:hover {
   color: white;
   background-color: var(--button-hover);
 }
 
-.button:acitve {
+.quiz-card__button:acitve {
   background-color: var(--button-active);
   box-shadow: 0 5px var(--button-active-shadow);
   transform: translateY(4px);
 }
 
-.tag-layout {
+.quiz-card__taglayout {
   display: flex;
   justify-content: space-evenly;
   margin-top: 10px;
 }
 
-.tag {
+.quiz-card__tag,
+.profile-skill__tag {
   padding: 6px;
   border: solid 2px var(--tag-border);
   border-radius: 20%;
@@ -136,11 +138,12 @@ footer {
   font-weight: bold;
 }
 
-.tag:hover {
+.quiz-card__tag:hover,
+.logout__button:hover {
   scale: 1.1;
 }
 
-.main-profile-layout {
+.main-grid-profile {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -152,7 +155,7 @@ footer {
   gap: 10px;
 }
 
-.profile-picture {
+.picture-section__picture {
   width: 20vw;
   height: auto;
   padding: 2px;
@@ -162,7 +165,7 @@ footer {
   object-fit: cover;
 }
 
-.profile-name {
+.picture-section__name {
   place-self: center;
   padding: 30px;
   border-radius: 1rem;
@@ -171,7 +174,7 @@ footer {
   font-size: 25px;
 }
 
-.profile-text-section {
+.profile-text {
   width: 50vw;
   padding: 1rem;
   border-radius: 1rem;
@@ -179,18 +182,18 @@ footer {
   place-self: center;
 }
 
-.skill-tag-layout {
+.profile-skills {
   display: flex;
   justify-content: space-evenly;
 }
 
-.navbar-layout {
+.navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.nav-icon:hover {
+.navbar__icon:hover {
   scale: 1.1;
 }
