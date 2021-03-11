@@ -3,6 +3,11 @@
   height: 3em;
 }
 
+.navbar__icon:hover {
+  transition: fill 2s ease-in-out;
+  scale: 1.1;
+}
+
 .quiz-card__bookmark {
   width: 2em;
   height: 2em;

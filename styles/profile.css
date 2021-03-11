@@ -1,0 +1,43 @@
+.main-grid-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.picture-section {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.picture-section__picture {
+  width: 20vw;
+  height: auto;
+  padding: 2px;
+  border: 5px solid transparent;
+  border-radius: 72% 28% 31% 69% / 30% 40% 60% 70%;
+  background-color: var(--content-background);
+  object-fit: cover;
+}
+
+.picture-section__name {
+  place-self: center;
+  padding: 30px;
+  border-radius: 1rem;
+  background-color: var(--content-background);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.profile-text {
+  width: 50vw;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--content-background);
+  place-self: center;
+}
+
+.profile-skills {
+  display: flex;
+  justify-content: space-evenly;
+}

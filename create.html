@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <div class="body-grid">
+      <header class="body-grid__header">
+        <div class="header__title">
+          <h1>Create</h1>
+        </div>
+      </header>
+      <main class="body-grid__main">
+        <div class="main-flex-create">
+          <form class="addquestion">
+            <h3>Add a question</h3>
+            <textarea id="addquestion__text" name="question_text"></textarea>
+          </form>
+          <form class="addanswer">
+            <h3>Add a Answer</h3>
+            <textarea id="addanswer__text" name="answer__text"></textarea>
+          </form>
+
+          <form class="addtags">
+            <h3>Add Tags</h3>
+            <div>
+              <textarea id="addtags__input" name="tag_text"></textarea>
+            </div>
+          </form>
+          <div class="submit">
+            <button class="submit__button">Submit</button>
+          </div>
+        </div>
+      </main>
+      <footer class="body-grid__footer">
+        <div class="navbar">
+          <a href="./index.html">
+            <img src="./icons/home.svg" alt="home icon" class="navbar__icon"
+          /></a>
+          <a href="./bookmark.html">
+            <img
+              src="./icons/bookmark.svg"
+              alt="bookmark-icon"
+              class="navbar__icon"
+            />
+          </a>
+          <a href="./create.html"
+            ><img
+              src="./icons/create.svg"
+              alt="create-icon"
+              class="navbar__icon"
+          /></a>
+          <a href="./profile.html"
+            ><img
+              src="./icons/profile.svg"
+              alt="profile-icon"
+              class="navbar__icon"
+          /></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
