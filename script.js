@@ -20,16 +20,12 @@ for (let i = 0; i < bookmark.length;i++){
     bookmark[i].addEventListener('click', () => {
      const bookmarkTicked = bookmark[i].classList.toggle(".quiz-card__bookmark")
      
-    
-
-
      if (bookmarkTicked) {
-        bookmark[i].style.fill = "none"
-        console.log("ticked")
-        
-     } else {
         bookmark[i].style.fill = "black"
         console.log("notticked")
+     } else {
+        bookmark[i].style.fill = "none"
+        console.log("ticked")
      }
     
     });
