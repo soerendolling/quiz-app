@@ -14,42 +14,46 @@ button[i].addEventListener('click', () => {
 });
 } 
  
- 
- 
- 
- 
- 
-//     answer[i].style.display = "block"
+const bookmark = document.querySelectorAll(".quiz-card__bookmark")
+
+for (let i = 0; i < bookmark.length;i++){
+    bookmark[i].addEventListener('click', () => {
+     const bookmarkTicked = bookmark[i].classList.toggle(".quiz-card__bookmark")
+     
+    
 
 
-//  button[i].addEventListener('click', () => {
-//     answer[i].style.display = "none"
-//  })
+     if (bookmarkTicked) {
+        bookmark[i].style.fill = "none"
+        console.log("ticked")
+        
+     } else {
+        bookmark[i].style.fill = "black"
+        console.log("notticked")
+     }
+    
+    });
+}
 
 
-// })
+
+
+
+// const bookmark = document.querySelectorAll('.question-card__bookmark')
+
+// for (let i = 0; i < bookmark.length; i++) {
+//   bookmark[i].addEventListener('click', () => {
+//     if (bookmark[i].classList.contains('far')) {
+//       bookmark[i].classList.remove('far', 'fa-bookmark')
+//       bookmark[i].classList.add('fas', 'fa-bookmark')
+//     } else {
+//       bookmark[i].classList.remove('fas', 'fa-bookmark')
+//       bookmark[i].classList.add('far', 'fa-bookmark')
+//     }
+//   })
 // }
 
 
-
-
-
-// const button = document.querySelector("button");
-// const container = document.querySelector(".container");
-// // const input = document.querySelector("input");
-
-// button.addEventListener("click", () => {
-//   const box = document.createElement("div");
-//   box.classList.add("box");
-//   container.append(box);
-//   box.innerHTML = `<input type="color">`;
-
-//   const input = document.querySelector("input");
-//   const color = input.value;
-
-//   box.addEventListener("input", () => {
-//     const color = input.value;
-//     box.style.background = color;
-//     box.reset();
-//   });
-// });
+ 
+ 
+ 
