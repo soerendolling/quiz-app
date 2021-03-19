@@ -15,7 +15,6 @@ button[i].addEventListener('click', () => {
 } 
  
 const bookmark = document.querySelectorAll(".quiz-card__bookmark")
-
 for (let i = 0; i < bookmark.length;i++){
     bookmark[i].addEventListener('click', () => {
      const bookmarkTicked = bookmark[i].classList.toggle(".quiz-card__bookmark")
@@ -31,23 +30,33 @@ for (let i = 0; i < bookmark.length;i++){
     });
 }
 
+const questionData = []
+
+const form = document.querySelector("form")
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+const inputQuestion = form["question__text"];
+  const inputAnswer = form["answer__text"];
+  const inputTags = form["tag__text"];
+
+  const newQuestion = {
+    questions: inputQuestion.value,
+    answer: inputAnswer.value,
+    tags: inputTags.value,
+  };
+
+  questionData.push(newQuestion);
+  console.log(questionData);
+  form.reset();
+
+})
 
 
 
 
-// const bookmark = document.querySelectorAll('.question-card__bookmark')
 
-// for (let i = 0; i < bookmark.length; i++) {
-//   bookmark[i].addEventListener('click', () => {
-//     if (bookmark[i].classList.contains('far')) {
-//       bookmark[i].classList.remove('far', 'fa-bookmark')
-//       bookmark[i].classList.add('fas', 'fa-bookmark')
-//     } else {
-//       bookmark[i].classList.remove('fas', 'fa-bookmark')
-//       bookmark[i].classList.add('far', 'fa-bookmark')
-//     }
-//   })
-// }
 
 
  

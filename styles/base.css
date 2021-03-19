@@ -85,10 +85,6 @@ button {
   color: black;
 }
 
-/* path {
-  fill: black;
-} */
-
 .quiz-card__bookmark:hover {
   scale: 1.3;
 }
