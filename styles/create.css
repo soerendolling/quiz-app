@@ -54,5 +54,10 @@ form h3 {
 
 .submit {
   place-self: center;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
+}
+
+.dark-mode {
+  place-self: center;
+  margin-bottom: 10px;
 }

@@ -98,7 +98,8 @@ button {
 
 .quiz-card__button,
 .logout__button,
-.submit__button {
+.submit__button,
+.dark-mode__button {
   display: inline-block;
   place-self: center;
   max-width: 170px;

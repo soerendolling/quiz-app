@@ -33,6 +33,8 @@ for (let i = 0; i < bookmark.length;i++){
 const questionData = []
 
 const form = document.querySelector("form")
+const darkModeButton = document.querySelector(".dark-mode__button")
+
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -53,9 +55,13 @@ const inputQuestion = form["question__text"];
 
 })
 
+const body = document.querySelector(".root-color")
 
+darkModeButton.addEventListener("click",() => {
+body.style.backgroundColor = "black"
 
-
+}
+)
 
 
 
