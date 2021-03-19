@@ -12,33 +12,47 @@ form h3 {
 .addquestion {
   display: flex;
   flex-direction: column;
+  align-items: center;
   border-radius: 1rem;
   padding: 10px;
+  width: 70vw;
   background-color: var(--content-background);
 }
 
 #addquestion__text {
-  width: 20 vw;
+  width: 50vw;
   height: 10vh;
 }
 
 .addanswer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 1rem;
   padding: 1rem;
   background: var(--content-background);
 }
 
 #addanswer__text {
-  width: 20 vw;
+  width: 50vw;
   height: 10vh;
 }
 
 .addtags {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 1rem;
   padding: 1rem;
   background: var(--content-background);
 }
 
+#addtags__input {
+  width: 50vw;
+  height: 10vh;
+}
+
 .submit {
   place-self: center;
+  margin-bottom: 5vh;
 }

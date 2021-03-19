@@ -70,7 +70,7 @@ button {
   display: grid;
   justify-content: center;
   gap: 10px;
-  width: 50vw;
+  width: 70vw;
   padding: 15px;
   border: solid 2px var(--quiz-window-border);
   border-radius: 1rem;
