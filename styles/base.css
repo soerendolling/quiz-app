@@ -70,7 +70,7 @@ button {
   display: grid;
   justify-content: center;
   gap: 10px;
-  width: 70vw;
+  width: 60vw;
   padding: 15px;
   border: solid 2px var(--quiz-window-border);
   border-radius: 1rem;
@@ -120,6 +120,15 @@ button {
   background-color: var(--button-active);
   box-shadow: 0 5px var(--button-active-shadow);
   transform: translateY(4px);
+}
+
+.quiz-card__answer {
+  display: flex;
+  justify-self: center;
+  display: none;
+  width: 50vw;
+  margin-top: 15px;
+  text-align: center;
 }
 
 .quiz-card__taglayout {
