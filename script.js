@@ -1,3 +1,5 @@
+const { doc } = require("prettier");
+
 const button = document.querySelectorAll('button')
 const answer = document.querySelectorAll('.quiz-card__answer')
 
@@ -33,8 +35,6 @@ for (let i = 0; i < bookmark.length;i++){
 const questionData = []
 
 const form = document.querySelector("form")
-const darkModeButton = document.querySelector(".dark-mode__button")
-
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -55,13 +55,34 @@ const inputQuestion = form["question__text"];
 
 })
 
-const body = document.querySelector(".root-color")
+// const body = document.querySelector(".body-grid__main")
+// const darkModeButton = document.querySelector(".dark-mode")
 
-darkModeButton.addEventListener("click",() => {
-body.style.backgroundColor = "black"
+// darkModeButton.addEventListener("click",() => {
+// const darkPressed = body.classList.toggle("body")
 
+// if (darkPressed !== false) {
+//    body.style.background = "red"
+//    console.log("1")
+// } else {
+//    body.style.background = "pink"
+//    console.log("2")
+// }
+// })
+
+function myFunction() {
+   console.log("button-pressed")
+   const element = document.querySelector(".body-grid__main");
+   const footer = document.querySelector(".body-grid__footer")
+   const dmButton = document.querySelector(".dark-mode__button");
+   const tags = document.querySelector(".profile-skill__tag");
+   const loButton = document.querySelector(".logout__button");
+   element.style.backgroundColor = "black"
+   footer.style.backgroundColor = "darkgrey"
+   dmButton.style.backgroundColor = "pink"
+   tags.style.backgroundColor = "pink"
+   loButton.style.backgroundColor = "pink"
 }
-)
 
 
 

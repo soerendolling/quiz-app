@@ -41,3 +41,11 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+.dark-mode__button {
+  place-self: center;
+}
+
+.go-dark {
+  background-color: pink;
+}
