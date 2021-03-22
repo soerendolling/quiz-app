@@ -15,12 +15,12 @@ form h3 {
   align-items: center;
   border-radius: 1rem;
   padding: 10px;
-  width: 70vw;
+  width: 50vw;
   background-color: var(--content-background);
 }
 
 #addquestion__text {
-  width: 50vw;
+  width: 40vw;
   height: 10vh;
 }
 
@@ -34,7 +34,7 @@ form h3 {
 }
 
 #addanswer__text {
-  width: 50vw;
+  width: 40vw;
   height: 10vh;
 }
 
@@ -48,11 +48,11 @@ form h3 {
 }
 
 #addtags__input {
-  width: 50vw;
+  width: 40vw;
   height: 10vh;
 }
 
 .submit {
   place-self: center;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
 }
