@@ -1,4 +1,4 @@
-const { doc } = require("prettier");
+
 
 const button = document.querySelectorAll('button')
 const answer = document.querySelectorAll('.quiz-card__answer')
@@ -55,20 +55,6 @@ const inputQuestion = form["question__text"];
 
 })
 
-// const body = document.querySelector(".body-grid__main")
-// const darkModeButton = document.querySelector(".dark-mode")
-
-// darkModeButton.addEventListener("click",() => {
-// const darkPressed = body.classList.toggle("body")
-
-// if (darkPressed !== false) {
-//    body.style.background = "red"
-//    console.log("1")
-// } else {
-//    body.style.background = "pink"
-//    console.log("2")
-// }
-// })
 
 function myFunction() {
    console.log("button-pressed")
