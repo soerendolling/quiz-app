@@ -166,3 +166,7 @@ button {
   margin-top: 10px;
   /* align-items: center; */
 }
+
+.bookmark-page {
+  display: none;
+}

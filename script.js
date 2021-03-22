@@ -28,32 +28,41 @@ button[i].addEventListener('click', () => {
 } 
  
 const bookmark = document.querySelectorAll(".quiz-card__bookmark")
+const article = document.querySelectorAll(".quiz-card")
+
+
+
 for (let i = 0; i < bookmark.length;i++){
 
    if (data[i].isBookmarked) {
       bookmark[i].style.fill = "black"
+      
    } else  {
       bookmark[i].style.fill = "none"
    }
 
-
-
     bookmark[i].addEventListener('click', () => {
      const bookmarkTicked = bookmark[i].classList.toggle(".quiz-card__bookmark")
      
+    
+
      console.log(bookmarkTicked)
      console.log(data[i].isBookmarked)
 
      if (bookmarkTicked)  {
-        bookmark[i].style.fill = "black"
+      bookmark[i].style.fill = "none"
         console.log("filled")
      } else  {
-      bookmark[i].style.fill = "none"
+      
+      bookmark[i].style.fill = "black"
       console.log("notfilled")
      }
     
     });
 }
+
+
+
 
 const questionData = []
 
