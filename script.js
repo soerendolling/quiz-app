@@ -1,3 +1,13 @@
+import {data} from "./lib/db.js"
+import {createCard} from "./lib/card.js"
+
+
+const content = document.querySelector(".main-grid__container")
+
+for (let i = 0; i < data.length;i++) {
+   const cardArticle = createCard(data[i])
+   content.append(cardArticle)
+}
 
 
 const button = document.querySelectorAll('button')
