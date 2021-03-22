@@ -130,7 +130,7 @@ button {
   display: flex;
   justify-self: center;
   display: none;
-  width: 50vw;
+  width: 40vw;
   margin-top: 15px;
   text-align: center;
 }
