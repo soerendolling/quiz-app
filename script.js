@@ -28,17 +28,19 @@ button[i].addEventListener('click', () => {
 } 
  
 const bookmark = document.querySelectorAll(".quiz-card__bookmark")
-const article = document.querySelectorAll(".quiz-card")
+const bookmarkPage = document.querySelector(".bookmark-page")
 
 
 
 for (let i = 0; i < bookmark.length;i++){
 
+
    if (data[i].isBookmarked) {
       bookmark[i].style.fill = "black"
-      
+      // bookmarkPage.display = "block"
    } else  {
       bookmark[i].style.fill = "none"
+      // bookmarkPage.display = "none"
    }
 
     bookmark[i].addEventListener('click', () => {
