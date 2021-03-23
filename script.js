@@ -1,50 +1,16 @@
-import { data } from './lib/db.js'
+import { getCards } from './lib/db.js'
 import { createCard } from './lib/card.js'
 
 const content = document.querySelector('.main-grid__container')
+
+const data = getCards()
+
+console.log(data)
 
 for (let i = 0; i < data.length; i++) {
   const cardArticle = createCard(data[i])
   content.append(cardArticle)
 }
-
-// const button = document.querySelectorAll('button')
-// const answer = document.querySelectorAll('.quiz-card__answer')
-
-// for (let i = 0; i < answer.length; i++) {
-//   button[i].addEventListener('click', () => {
-//     const added = answer[i].classList.toggle('.quiz-card__answer')
-
-//     if (added) {
-//       answer[i].style.display = 'block'
-//     } else {
-//       answer[i].style.display = 'none'
-//     }
-//   })
-// }
-
-// const bookmark = document.querySelectorAll('.quiz-card__bookmark')
-
-// for (let i = 0; i < bookmark.length; i++) {
-//   if (data[i].isBookmarked) {
-//     bookmark[i].style.fill = 'black'
-//   } else {
-//     bookmark[i].style.fill = 'none'
-//   }
-
-//   bookmark[i].addEventListener('click', () => {
-//     const bookmarkTicked = bookmark[i].classList.toggle('.quiz-card__bookmark')
-
-//     console.log(bookmarkTicked)
-//     console.log(data[i].isBookmarked)
-
-//     if (bookmarkTicked) {
-//       bookmark[i].style.fill = 'black'
-//     } else {
-//       bookmark[i].style.fill = 'none'
-//     }
-//   })
-// }
 
 // const questionData = []
 
