@@ -86,6 +86,10 @@ button {
   color: black;
 }
 
+.quiz-card__bookmark--toggled {
+  fill: black;
+}
+
 .quiz-card__bookmark:hover {
   scale: 1.8;
 }

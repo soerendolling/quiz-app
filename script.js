@@ -1,94 +1,72 @@
-import {data} from "./lib/db.js"
-import {createCard} from "./lib/card.js"
+import { data } from './lib/db.js'
+import { createCard } from './lib/card.js'
 
+const content = document.querySelector('.main-grid__container')
 
-const content = document.querySelector(".main-grid__container")
-
-for (let i = 0; i < data.length;i++) {
-   const cardArticle = createCard(data[i])
-   content.append(cardArticle)
-
+for (let i = 0; i < data.length; i++) {
+  const cardArticle = createCard(data[i])
+  content.append(cardArticle)
 }
 
+// const button = document.querySelectorAll('button')
+// const answer = document.querySelectorAll('.quiz-card__answer')
 
-const button = document.querySelectorAll('button')
-const answer = document.querySelectorAll('.quiz-card__answer')
+// for (let i = 0; i < answer.length; i++) {
+//   button[i].addEventListener('click', () => {
+//     const added = answer[i].classList.toggle('.quiz-card__answer')
 
-for (let i = 0; i < answer.length;i++){
-button[i].addEventListener('click', () => {
- const added = answer[i].classList.toggle(".quiz-card__answer")
- 
- if (added) {
-    answer[i].style.display = "block"
- } else {
-    answer[i].style.display = "none"
- }
+//     if (added) {
+//       answer[i].style.display = 'block'
+//     } else {
+//       answer[i].style.display = 'none'
+//     }
+//   })
+// }
 
-});
-} 
- 
-const bookmark = document.querySelectorAll(".quiz-card__bookmark")
-const bookmarkPage = document.querySelector(".bookmark-page")
+// const bookmark = document.querySelectorAll('.quiz-card__bookmark')
 
+// for (let i = 0; i < bookmark.length; i++) {
+//   if (data[i].isBookmarked) {
+//     bookmark[i].style.fill = 'black'
+//   } else {
+//     bookmark[i].style.fill = 'none'
+//   }
 
+//   bookmark[i].addEventListener('click', () => {
+//     const bookmarkTicked = bookmark[i].classList.toggle('.quiz-card__bookmark')
 
-for (let i = 0; i < bookmark.length;i++){
+//     console.log(bookmarkTicked)
+//     console.log(data[i].isBookmarked)
 
+//     if (bookmarkTicked) {
+//       bookmark[i].style.fill = 'black'
+//     } else {
+//       bookmark[i].style.fill = 'none'
+//     }
+//   })
+// }
 
-   if (data[i].isBookmarked) {
-      bookmark[i].style.fill = "black"
-      // bookmarkPage.display = "block"
-   } else  {
-      bookmark[i].style.fill = "none"
-      // bookmarkPage.display = "none"
-   }
+// const questionData = []
 
-    bookmark[i].addEventListener('click', () => {
-     const bookmarkTicked = bookmark[i].classList.toggle(".quiz-card__bookmark")
-     
-    
+// const form = document.querySelector('form')
 
-     console.log(bookmarkTicked)
-     console.log(data[i].isBookmarked)
+// form.addEventListener('submit', event => {
+//   event.preventDefault()
 
-     if (bookmarkTicked)  {
-      bookmark[i].style.fill = "none"
-        console.log("filled")
-     } else  {
-      
-      bookmark[i].style.fill = "black"
-      console.log("notfilled")
-     }
-    
-    });
-}
+//   const inputQuestion = form['question__text']
+//   const inputAnswer = form['answer__text']
+//   const inputTags = form['tag__text']
 
+//   const newQuestion = {
+//     questions: inputQuestion.value,
+//     answer: inputAnswer.value,
+//     tags: inputTags.value,
+//   }
 
-
-
-const questionData = []
-
-const form = document.querySelector("form")
-
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-const inputQuestion = form["question__text"];
-  const inputAnswer = form["answer__text"];
-  const inputTags = form["tag__text"];
-
-  const newQuestion = {
-    questions: inputQuestion.value,
-    answer: inputAnswer.value,
-    tags: inputTags.value,
-  };
-
-  questionData.push(newQuestion);
-  console.log(questionData);
-  form.reset();
-
-})
-
+//   questionData.push(newQuestion)
+//   console.log(questionData)
+//   form.reset()
+// })
 
 // function myFunction() {
 //    console.log("button-pressed")
@@ -120,9 +98,3 @@ const inputQuestion = form["question__text"];
 //    name.style.backgroundColor = "pink"
 //    name.style.color = "white"
 // }
-
-
-
- 
- 
- 
