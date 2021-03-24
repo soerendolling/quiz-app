@@ -5,34 +5,10 @@ const content = document.querySelector('.main-grid__container')
 
 const data = getCards()
 
-console.log(data)
-
 for (let i = 0; i < data.length; i++) {
   const cardArticle = createCard(data[i])
   content.append(cardArticle)
 }
-
-// const questionData = []
-
-// const form = document.querySelector('form')
-
-// form.addEventListener('submit', event => {
-//   event.preventDefault()
-
-//   const inputQuestion = form['question__text']
-//   const inputAnswer = form['answer__text']
-//   const inputTags = form['tag__text']
-
-//   const newQuestion = {
-//     questions: inputQuestion.value,
-//     answer: inputAnswer.value,
-//     tags: inputTags.value,
-//   }
-
-//   questionData.push(newQuestion)
-//   console.log(questionData)
-//   form.reset()
-// })
 
 // function myFunction() {
 //    console.log("button-pressed")
