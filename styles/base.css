@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 112.5%;
   line-height: 1.5;
   margin: 0;
@@ -33,7 +33,7 @@ button {
 .body-grid__header {
   grid-row: 1 / 2;
   border: solid 2px var(--header-border);
-  background: var(--header-background);
+  background-color: var(--header-background);
 }
 
 .body-grid__main {
@@ -41,14 +41,15 @@ button {
   display: grid;
   align-items: center;
   justify-content: center;
-  background-color: var(--main-background);
+  /* background-color: var(--main-background); */
+  background-image: var(--main-background);
   overflow-y: scroll;
 }
 
 .body-grid__footer {
   grid-row: 3 / 4;
   border: solid 2px var(--navbar-border);
-  background-color: var(--navbar-background);
+  background-image: var(--navbar-background);
 }
 
 .header__title {
@@ -114,7 +115,7 @@ button {
   border-radius: 15px;
   outline: none;
   box-shadow: 0 9px var(--button-shadow);
-  background-color: var(--button-background);
+  background-image: var(--button-background);
   text-align: center;
   text-decoration: none;
   font-size: 14px;
@@ -154,7 +155,7 @@ button {
   margin: 3px;
   border: solid 2px var(--tag-border);
   border-radius: 20%;
-  background-color: var(--tag-background);
+  background-image: var(--tag-background);
   font-size: 14px;
   color: var(--tag-font-color);
   font-weight: bold;

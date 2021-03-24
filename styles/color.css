@@ -1,17 +1,17 @@
 :root {
   --header-background: brown;
   --header-border: black;
-  --main-background: lightskyblue;
-  --navbar-background: burlywood;
+  --main-background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  --navbar-background: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
   --navbar-border: black;
   --content-background: white;
   --quiz-window-border: black;
-  --button-background: burlywood;
+  --button-background: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
   --button-shadow: rgb(202, 193, 193);
   --button-hover: rgb(167, 126, 73);
   --button-active: rgb(167, 126, 73);
   --button-active-shadow: #666;
   --tag-border: black;
-  --tag-background: burlywood;
+  --tag-background: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
   --tag-font-color: black;
 }
