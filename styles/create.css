@@ -14,12 +14,11 @@ form h3 {
   flex-direction: column;
   align-items: center;
   border-radius: 1rem;
-  padding: 10px;
-  width: 50vw;
+  padding: 30px 60px;
   background-color: var(--content-background);
 }
 
-#addquestion__text {
+#question__text {
   width: 40vw;
   height: 10vh;
 }
@@ -33,7 +32,7 @@ form h3 {
   background: var(--content-background);
 }
 
-#addanswer__text {
+#answer__text {
   width: 40vw;
   height: 10vh;
 }
@@ -47,7 +46,7 @@ form h3 {
   background: var(--content-background);
 }
 
-#addtags__input {
+#tag__text {
   width: 40vw;
   height: 10vh;
 }
